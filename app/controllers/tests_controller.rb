@@ -5,6 +5,7 @@ class TestsController < ApplicationController
 	end
 
 	def new
+		@test = Test.new
 	end
 
 	def create
@@ -14,10 +15,19 @@ class TestsController < ApplicationController
 		redirect_to @test
 	end
 
+	def show
+		@test = Test.find(params[:id])
+	end
+
+	def edit
+		@test = Test.find(params[:id])
+	end
+
 	private
 
 	def test_params
-		params.require(:test).permit(:question, :answer)
+		params.require(:test).permit(:question1, :answer1, :question2, :answer2, 
+			:question3, :answer3, :question4, :answer4, :question5, :answer5)
 	end
 
 end

@@ -1,5 +1,5 @@
 	<%= form_for @test do |f| %>
-		<!-- Block to handle errors while saving tests -->
+		<!-- Block to handle errors while saving test -->
 		<% if @test.errors.any? %>
 			<div id="errors">
 				<h2><%= pluralize(@test.errors.count, "error") %> stopped this test from saving </h2>
@@ -12,48 +12,48 @@
 		<% end %>
 
 		<p>
-			<%= f.label :question %> <br>
-			<%= f.text_field :question %>		
+			<%= f.label :question1 %> <br>
+			<%= f.text_area :question1 %>		
 		</p>
 		<p>
-			<%= f.label :answer %> <br>
-			<%= f.text_area :answer %>		
+			<%= f.label :answer1 %> <br>
+			<%= f.text_field :answer1 %>		
 		</p>
 
 		<p>
 			<%= f.label :question2 %> <br>
-			<%= f.text_field :question2 %>		
+			<%= f.text_area :question2 %>		
 		</p>
 		<p>
 			<%= f.label :answer2 %> <br>
-			<%= f.text_area :answer2 %>		
+			<%= f.text_field :answer2 %>		
 		</p>
 		
 		<p>
 			<%= f.label :question3 %> <br>
-			<%= f.text_field :question3 %>		
+			<%= f.text_area :question3 %>		
 		</p>
 		<p>
 			<%= f.label :answer3 %> <br>
-			<%= f.text_area :answer3 %>		
+			<%= f.text_field :answer3 %>		
 		</p>
 
 		<p>
 			<%= f.label :question4 %> <br>
-			<%= f.text_field :question4 %>		
+			<%= f.text_area :question4 %>		
 		</p>
 		<p>
 			<%= f.label :answer4 %> <br>
-			<%= f.text_area :answer4 %>		
+			<%= f.text_field :answer4 %>		
 		</p>
 
 		<p>
 			<%= f.label :question5 %> <br>
-			<%= f.text_field :question5 %>		
+			<%= f.text_area :question5 %>		
 		</p>
 		<p>
 			<%= f.label :answer5 %> <br>
-			<%= f.text_area :answer5 %>		
+			<%= f.text_field :answer5 %>		
 		</p>
 
 		<p>
