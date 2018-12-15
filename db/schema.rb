@@ -10,13 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_15_015648) do
+ActiveRecord::Schema.define(version: 2018_12_15_143948) do
 
   create_table "tests", force: :cascade do |t|
     t.text "question"
     t.string "answer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "question1"
+    t.string "answer1"
+    t.text "question2"
+    t.string "answer2"
+    t.text "question3"
+    t.string "answer3"
+    t.text "question4"
+    t.string "answer4"
+    t.text "question5"
+    t.string "answer5"
   end
 
 end
