@@ -1,6 +1,7 @@
 class TestsController < ApplicationController
 
 	def index
+		@tests = Test.all.order('created_at DESC')
 	end
 
 	def new
