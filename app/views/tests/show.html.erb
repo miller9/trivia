@@ -1,14 +1,14 @@
 <div id="post_content">	
 	<h1 class="title">
-		<%= @test.question %>
+		<%= @test.question1 %>
 	</h1>
 
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
-		<%= link_to 'Edit', edit_post_path(@test) %>
+		<%= link_to 'Edit', edit_test_path(@test) %>
 	</p>
 
 	<p class="body">
-		<%= @test.answer %>
+		<%= @test.answer1 %>
 	</p>
 </div>
