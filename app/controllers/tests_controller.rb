@@ -5,19 +5,50 @@ class TestsController < ApplicationController
 	end
 
 	def new
+		@test = Test.new
 	end
 
 	def create
 		@test = Test.new(test_params)
-		@test.save
+		
+		if @test.save
+			redirect_to @test
+		else
+			render "new"
+		end
+	end
 
-		redirect_to @test
+	def show
+		@test = Test.find(params[:id])
+	end
+
+	def edit
+		@test = Test.find(params[:id])
+	end
+
+	def update
+		@test = Test.find(params[:id])
+
+		if @test.update(params[:test].permit(:question1, :answer1, :question2, :answer2, 
+				:question3, :answer3, :question4, :answer4, :question5, :answer5))
+			redirect_to @test
+		else
+			render 'edit'
+		end
+	end
+
+	def destroy
+		@test = Test.find(params[:id])
+		@test.destroy
+
+		redirect_to root_path		
 	end
 
 	private
 
-	def test_params
-		params.require(:test).permit(:question, :answer)
-	end
+		def test_params
+			params.require(:test).permit(:question1, :answer1, :question2, :answer2, 
+				:question3, :answer3, :question4, :answer4, :question5, :answer5)
+		end
 
 end
