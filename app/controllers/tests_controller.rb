@@ -10,9 +10,12 @@ class TestsController < ApplicationController
 
 	def create
 		@test = Test.new(test_params)
-		@test.save
-
-		redirect_to @test
+		
+		if @test.save
+			redirect_to @test
+		else
+			render "new"
+		end
 	end
 
 	def show
