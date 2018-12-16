@@ -12,4 +12,8 @@ class CountsController < ApplicationController
 		@ticket = ticket
 	end
 
+	def join
+		@nickname = ""
+	end
+
 end
