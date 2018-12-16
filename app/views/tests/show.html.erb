@@ -7,6 +7,7 @@
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
 		<%= link_to 'Edit', edit_test_path(@test) %>
+		<%= link_to 'Delete', test_path(@test), method: :delete, data: { confirm: 'Are you sure to delete this set of 5 questions ' } %>
 	</p>
 
 	<p class="body">
