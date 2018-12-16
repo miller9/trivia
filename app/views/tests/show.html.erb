@@ -1,8 +1,12 @@
 <div id="post_content">	
 
 	<h1 class="title">
-		<%= @test.question1 %>
+		<%= @test.title %>
 	</h1>
+	<br>
+	<h3 class="title">
+		<%= @test.question1 %>
+	</h3>
 
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
@@ -14,9 +18,9 @@
 		<%= @test.answer1 %>
 	</p>
 
-	<h1 class="title">
+	<h3 class="title">
 		<%= @test.question2 %>
-	</h1>
+	</h3>
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
 		<%= link_to 'Edit', edit_test_path(@test) %>
@@ -26,9 +30,9 @@
 	</p>
 
 
-	<h1 class="title">
+	<h3 class="title">
 		<%= @test.question3 %>
-	</h1>
+	</h3>
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
 		<%= link_to 'Edit', edit_test_path(@test) %>
@@ -38,9 +42,9 @@
 	</p>
 
 
-	<h1 class="title">
+	<h3 class="title">
 		<%= @test.question4 %>
-	</h1>
+	</h3>
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
 		<%= link_to 'Edit', edit_test_path(@test) %>
@@ -50,9 +54,9 @@
 	</p>
 
 
-	<h1 class="title">
+	<h3 class="title">
 		<%= @test.question5 %>
-	</h1>
+	</h3>
 	<p class="date">
 		Submitted <%= time_ago_in_words(@test.created_at) %> ago |
 		<%= link_to 'Edit', edit_test_path(@test) %>

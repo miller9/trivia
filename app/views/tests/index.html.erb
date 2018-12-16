@@ -1,7 +1,7 @@
 <h1> This is the TRIVIA index page </h1>
 <% @tests.each do |test| %>
 	<div class="post_wrapper">
-		<h2 class="question"> <%= link_to test.question1, test %> </h2>
+		<h2 class="question"> <%= link_to test.title, test %> </h2>
 		<p class="date"> <%= time_ago_in_words(test.created_at) %> </p>
 	</div>
 <% end %>
