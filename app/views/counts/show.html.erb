@@ -4,16 +4,8 @@
 		<%= "Join at <URL_4_people> with Game PIN:" %> <br>
 		<%= @ticket %>
 	</h1>
-	
-	<%= form_for @ticket do |nick| %>
-		<h3>
-			<!-- @nickname = gets.chomp.to_s -->
-			<p>
-				<%= nick.label :Ingresa_tu_apodo %> <br>
-				<%= nick.text_area :nickame %>
-			</p>
-			<br>
-		</h3>
-	<% end %>
+	<h3>
+		@nickname
+	</h3>
 
 <% end %>

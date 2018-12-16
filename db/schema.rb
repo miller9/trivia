@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_16_160305) do
-
-  create_table "counts", force: :cascade do |t|
-    t.string "nickname"
-    t.integer "points"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2018_12_16_014454) do
 
   create_table "tests", force: :cascade do |t|
     t.datetime "created_at", null: false
